@@ -29,7 +29,22 @@ function lifeInWeeks(age) {
 /************Don't change the code above************/    
     
     //Write your code here.
+        // Constants
+        const MAX_AGE = 90;
+        const DAYS_IN_YEAR = 365;
+        const WEEKS_IN_YEAR = 52;
+        const MONTHS_IN_YEAR = 12;
     
+        // Calculate time left
+        const yearsLeft = MAX_AGE - age;
+        const daysLeft = yearsLeft * DAYS_IN_YEAR;
+        const weeksLeft = yearsLeft * WEEKS_IN_YEAR;
+        const monthsLeft = yearsLeft * MONTHS_IN_YEAR;
+    
+        // Output the result
+        console.log(`You have ${daysLeft} days, ${weeksLeft} weeks, and ${monthsLeft} months left.`);
+    
+    // Example usage
     
     
     
